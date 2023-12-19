@@ -4,6 +4,21 @@ description: This is test.
 branding:
   icon: at-sign
   color: gray-dark
+inputs:
+  method:
+    description: |
+      Which number to increment in the semantic versioning.
+      Set 'major', 'minor', 'patch' or 'get'.
+    required: true
+outputs:
+  currentnVersio:
+    description: current version
+  nextVersion:
+    description: next version
+  method:
+    description: method
 runs:
   using: docker
   image: Dockerfile
+  args:
+    - minor
