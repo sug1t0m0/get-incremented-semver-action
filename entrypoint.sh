@@ -2,6 +2,12 @@
 
 set -e
 
+echo "$PWD"
+
+sh -c "git config --global --add safe.directory $PWD"
+
+git config --get credential.helper
+
 # git remote のリストを取得し、各リモートについての URL を表示する
 for remote in $(git remote); do
     echo "Remote name: $remote"
