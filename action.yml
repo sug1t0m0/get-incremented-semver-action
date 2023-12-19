@@ -1,0 +1,9 @@
+name: My Action
+author: sug1t0m0
+description: This is test.
+branding:
+  icon: at-sign
+  color: gray-dark
+runs:
+  using: docker
+  image: Dockerfile
