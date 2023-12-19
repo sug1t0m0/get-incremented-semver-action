@@ -6,4 +6,4 @@
 #     - uses: sug1t0m0/set-incremented-semver-action@v1
 FROM ghcr.io/sug1t0m0/semver-incrementer:latest
 ADD ./entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["git remote -v"]
