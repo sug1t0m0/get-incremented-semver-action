@@ -7,3 +7,5 @@ branding:
 runs:
   using: docker
   image: Dockerfile
+  args:
+    - "git remote -v"
